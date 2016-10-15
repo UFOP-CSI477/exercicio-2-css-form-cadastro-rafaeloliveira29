@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="utf-8"
+
+		<title></title>
+
+</head>
+
+<body bgcolor="#FFEFD5"><center>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<h1><center>Cadastro</h1>
+<h1><small> Informe Seus dados para cadastro:</h1><br>
+<form method="post" action="">
+	<div class="form-group">
+    <label for="Nome">Nome
+    <input style="width: 300px" type="text" class="form-control" id="nomecad" aria-describedby="nomecad" placeholder="Informe Seu Nome">
+  </div>
+	<fieldset class="form-group">
+    <label>Sexo</label>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="CkMasculino" value="Masculino" checked>
+        Masculino
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="CkFeminino" value="Feminino">
+        Feminino
+      </label>
+    </div>
+	</fieldset>
+		<div class="form-group">
+	    <label for="Rua">Rua
+	    <input style="width: 300px" type="text" class="form-control" id="ruacad" aria-describedby="ruacad" placeholder="Informe Sua Rua">
+	  </div>
+		<div class="form-group">
+	    <label for="Numero">Numero
+	    <input style="width: 300px" maxlength="4" type="number" class="form-control" id="numerocad" aria-describedby="numerocad" placeholder="Informe o numero">
+	  </div>
+		<div class="form-group">
+	    <label for="Complemento">Complemento
+	    <input style="width: 300px" type="text" class="form-control" id="compcad" aria-describedby="compcad" placeholder="Complemento">
+	  </div>
+		<div class="form-group">
+			<label for="Lista de Cidades">Selecione a cidade:</label>
+			<select style="width: 300px" class="form-control" id="listacidades">
+				<option value="1">São Domingos do Prata</option>
+				<option value="2">Nova Era</option>
+				<option value="3">João Monlevade</option>
+				<option value="4">Belo Horizonte</option>
+				<option value="5">Alvinopolis</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="Lista Estados">Selecione o estado:</label>
+			<select style="width: 300px" class="form-control" id="listadeestados">
+				<option value="1">MG</option>
+				<option value="2">SP</option>
+				<option value="3">RJ</option>
+				<option value="4">ES</option>
+				<option value="5">BA</option>
+			</select>
+		</div>
+		<div class="form-group">
+	    <label for="CEP">CEP
+	    <input style="width: 300px" maxlength="8" type="text" class="form-control" id="cepcad" aria-describedby="cepcad" placeholder="CEP">
+	  </div>
+		<div class="form-group">
+	    <label for="Telefone">Telefone
+	    <input style="width: 300px" maxlength="12"  type="Phone" class="form-control" id="phonecad" aria-describedby="phonecad" placeholder="Numero do Telefone fixo">
+	  </div>
+		<div class="form-group">
+			<label for="Celular">Celular
+			<input style="width: 300px" maxlength="12" type="phone-number" class="form-control" id="phonecad" aria-describedby="phonecad" placeholder="Numero do Telefone fixo">
+		</div>
+
+		<div class="form-group">
+	    <label for="email">Email</label>
+	    <input style="width: 300px"type="email" class="form-control" id="emailcad" aria-describedby="emailcad" placeholder="Informe Seu Email">
+	    <small id="emailinfo" class="form-text text-muted">Seu email será mantido em sigilo.</small>
+	  </div>
+
+		<div class="form-group">
+	    <label for="CPF">CPF</label>
+	    <input style="width: 300px" maxlength="11" type="text" class="form-control" id="cpfcad" aria-describedby="cpfcad" placeholder="Informe Seu CPF">
+	  </div>
+
+		<div class="form-group">
+			<label for="Usuario">Usuário</label>
+			<input style="width: 300px" type="text" class="form-control" id="usercad" aria-describedby="usercad" placeholder="Informe seu nome de usuário">
+		</div>
+		<div class="form-group">
+    <label for="pwd">Senha:</label>
+    <input style="width: 300px" type="password" class="form-control" id="senha">
+  </div>
+	<div class="form-group">
+	<label for="pwdconf">Confirmação de Senha:</label>
+	<input style="width: 300px" type="password" class="form-control" id="senhaconf">
+	  <div class="form-group">
+<br>
+
+	<div class="vertical-align">
+	<label for="area">Areas de Interesse(Selecione 1 ou mais):</label>
+	<br><input type="checkbox" name="area">Web<br>
+	<input type="checkbox" name="area">PROG<br>
+	<input type="checkbox" name="area">BD<br>
+	<input type="checkbox" name="area">Redes<br>
+	<input type="checkbox" name="area">WEB<br>
+	<input type="checkbox" name="area">Gestão<br>
+	<input type="checkbox" name="area">IA<br>
+	<input type="checkbox" name="area">Algoritmos<br>
+	<input type="checkbox" name="area">Teoria da Computação<br>
+	<input type="checkbox" name="area">Pesquisa Operacional<br>
+</div>
+	</form>
+	<br>
+<a class="btn btn-primary" href='tabela.html' role="button">Visualizar Tabela de Dados</a>
+<a class="btn btn-primary" href='Menu.html' role="button">Menu Principal</a>
+	<BUTTON class ="btn btn-primary" onclick ="alert('Dados Cadastrados com Sucesso #sqn')" type="submit">Cadastrar Dados</BUTTON>
+
+</body>
+</html>
